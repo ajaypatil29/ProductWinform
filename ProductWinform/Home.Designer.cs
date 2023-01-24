@@ -34,6 +34,10 @@ namespace ProductWinform
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disconnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disconnectionEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disConnectionBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disConnectionStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,12 +48,17 @@ namespace ProductWinform
             this.productToolStripMenuItem,
             this.employeeToolStripMenuItem,
             this.studentToolStripMenuItem,
-            this.bookToolStripMenuItem});
+            this.bookToolStripMenuItem,
+            this.disconnectionToolStripMenuItem,
+            this.disconnectionEmployeeToolStripMenuItem,
+            this.disConnectionBookToolStripMenuItem,
+            this.disConnectionStudentToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1187, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // productToolStripMenuItem
             // 
@@ -79,11 +88,39 @@ namespace ProductWinform
             this.bookToolStripMenuItem.Text = "Book";
             this.bookToolStripMenuItem.Click += new System.EventHandler(this.bookToolStripMenuItem_Click);
             // 
+            // disconnectionToolStripMenuItem
+            // 
+            this.disconnectionToolStripMenuItem.Name = "disconnectionToolStripMenuItem";
+            this.disconnectionToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.disconnectionToolStripMenuItem.Text = "Disconnection Product";
+            this.disconnectionToolStripMenuItem.Click += new System.EventHandler(this.disconnectionToolStripMenuItem_Click);
+            // 
+            // disconnectionEmployeeToolStripMenuItem
+            // 
+            this.disconnectionEmployeeToolStripMenuItem.Name = "disconnectionEmployeeToolStripMenuItem";
+            this.disconnectionEmployeeToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.disconnectionEmployeeToolStripMenuItem.Text = "Disconnection employee";
+            this.disconnectionEmployeeToolStripMenuItem.Click += new System.EventHandler(this.disconnectionEmployeeToolStripMenuItem_Click);
+            // 
+            // disConnectionBookToolStripMenuItem
+            // 
+            this.disConnectionBookToolStripMenuItem.Name = "disConnectionBookToolStripMenuItem";
+            this.disConnectionBookToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
+            this.disConnectionBookToolStripMenuItem.Text = "DisConnection Book";
+            this.disConnectionBookToolStripMenuItem.Click += new System.EventHandler(this.disConnectionBookToolStripMenuItem_Click);
+            // 
+            // disConnectionStudentToolStripMenuItem
+            // 
+            this.disConnectionStudentToolStripMenuItem.Name = "disConnectionStudentToolStripMenuItem";
+            this.disConnectionStudentToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
+            this.disConnectionStudentToolStripMenuItem.Text = "DisConnection Student";
+            this.disConnectionStudentToolStripMenuItem.Click += new System.EventHandler(this.disConnectionStudentToolStripMenuItem_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1187, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -104,5 +141,9 @@ namespace ProductWinform
         private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disconnectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disconnectionEmployeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disConnectionBookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disConnectionStudentToolStripMenuItem;
     }
 }
